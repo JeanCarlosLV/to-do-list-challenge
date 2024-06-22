@@ -1,0 +1,80 @@
+.main {
+    background: var(--gray-500);
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.main label {
+    display: flex;
+    align-items: center;
+}
+
+.main span {
+    text-align: left;
+    flex: 1;
+    overflow: hidden;
+}
+
+.checkbox {
+    width: 1.091rem; 
+    height: 1.091rem; 
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    margin-right: 1rem;
+    position: relative; 
+    line-height: 1.091rem; 
+}
+
+.checkbox:hover {
+    border: 2px solid var(--blue-dark);
+    background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkbox:checked {
+    background: var(--purple-dark);
+    border: 0;
+}
+
+.checkbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 0.5rem; /* Small enough to fit inside the checkbox */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox:checked:hover {
+    background: var(--purple);
+}
+
+.span-checked {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.main button {
+    background: transparent;
+    color: var(--gray-300);
+    cursor: pointer;
+    border: 0;
+}
+
+.main button:hover {
+    color: var(--danger);
+}

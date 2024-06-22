@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main aside {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+.main > aside > span {
+    background: var(--gray-400);
+    border: 0;
+    border-radius: 16px;
+    padding: 2px 8px;
+
+    font-size: 0.75rem;
+}
+
+.main aside p {
+    font-size: 0.875rem;
+}
+
+.criadas > p {
+    color: var(--blue);
+}
+
+.concluidas > p {
+    color: var(--purple)
+}

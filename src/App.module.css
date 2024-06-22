@@ -1,0 +1,24 @@
+.content {
+    width: 100%;
+    max-width: 46rem;
+   
+    margin: 0 auto; /*Para centralizar horizontalmente na tela*/
+}
+
+.inputArea {
+    display: flex;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+.inputArea input, .inputArea button {
+    transform: translateY(-50%);
+  
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
