@@ -24,8 +24,13 @@ function App() {
       description: taskText,
       isChecked: false
     }
-    setTaskList((state) => [...state, addTask]);
-    setTaskText('')
+
+    if(addTask.description){
+      setTaskList((state) => [...state, addTask]);
+      setTaskText('')
+    }else{
+      alert("Preencha a descrição da Atividade!")
+    }
   }
 
   function deleteTask(taskToDelete: number) {
@@ -64,6 +69,7 @@ function App() {
           <Input 
             onChange={(e) => setTaskText(e.target.value)}
             value={taskText}
+            required
           />
           <Button 
             onClick={handleAddTask}
